@@ -1,0 +1,40 @@
+fieldset {
+  max-width: 200px;
+  border-radius: 10px;
+  box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.3);
+}
+.title {
+  font-size: 18px;
+  font-weight: 600;
+}
+input {
+  display: block;
+}
+label {
+  display: block;
+  margin: 10px;
+}
+.message {
+  display: block;
+  resize: vertical;
+  max-height: 150px;
+}
+.rules {
+  display: inline;
+  cursor: pointer;
+   transition: all 0.3s;
+}
+.rules:hover{
+     transform: scale(1.05);
+}
+.button{
+    border: 0;
+    padding: 3px 6px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+.button:hover{
+    transform: scale(1.05);
+}
+
