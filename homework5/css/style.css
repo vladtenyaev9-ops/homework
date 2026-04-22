@@ -1,0 +1,105 @@
+html {
+  font-family: Ubuntu, Oswald, sans-serif;
+}
+body * {
+  box-sizing: border-box;
+}
+.container {
+  max-width: 1250px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+/*////////////////////////////////////header */
+
+.article-title {
+  font-family: "Oswald";
+  margin-top: 80px;
+  font-weight: 600;
+  line-height: 115%;
+  text-transform: uppercase;
+  color: #2c332f;
+  max-width: 596px;
+}
+.big-title {
+  font-size: 48px;
+}
+.medium-title {
+  font-size: 36px;
+}
+.article-text {
+  margin-top: 40px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 130%;
+  color: #535755;
+}
+.second {
+  margin-top: 20px;
+}
+.text-link {
+  text-decoration: none;
+}
+.article-image{
+ position: relative;
+}
+.article-img {
+  margin-top: 80px;
+  max-width: 100%;
+}
+.article-image::before{
+  content:" ";
+  position: absolute;
+  top: 180px;
+  left: -300px;
+  background: url("/images/decor3.png");
+  width: 528px;
+  height: 48px;
+  z-index: -1;
+ 
+}
+.article_gym-classes {
+  max-width: 744px;
+}
+.gym_classes{
+  padding: 0;
+  margin: 20px 0 0 14px;
+}
+.gym-class {
+  margin-bottom: 16px;
+}
+.gym-class:last-child{
+  margin: 0;
+}
+ul li::marker {
+  color: blue;
+}
+.article_gym-video{
+  position: relative;
+}
+.article_gym-video::after{
+   content:" ";
+  position: absolute;
+  top: 500px;
+  left: 1200px;
+  background: url("/images/decor3.png");
+  width: 528px;
+  height: 48px;
+  z-index: -1;
+ 
+}
+.gym_video {
+  margin-top: 40px;
+  max-width: 100%;
+}
+footer{
+  margin-top: 120px;
+}
