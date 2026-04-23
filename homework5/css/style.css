@@ -60,7 +60,7 @@ p {
   position: absolute;
   top: 180px;
   left: -300px;
-  background: url("/images/decor3.png");
+  background: url("../images/decor3.png");
   width: 528px;
   height: 48px;
   z-index: -1;
@@ -90,7 +90,7 @@ ul li::marker {
   position: absolute;
   top: 500px;
   left: 1200px;
-  background: url("/images/decor3.png");
+  background: url("../images/decor3.png");
   width: 528px;
   height: 48px;
   z-index: -1;
