@@ -1,0 +1,136 @@
+html {
+  font-family: Ubuntu, Oswald, sans-serif;
+}
+body * {
+  box-sizing: border-box;
+}
+.container {
+  max-width: 1250px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+/*////////////////////////////////////header */
+
+.article-title {
+  font-family: "Oswald";
+  margin-top: 80px;
+  font-weight: 600;
+  line-height: 115%;
+  text-transform: uppercase;
+  color: #2c332f;
+  max-width: 596px;
+}
+.big-title {
+  font-size: 48px;
+}
+.medium-title {
+  font-size: 36px;
+}
+.article-text {
+  margin-top: 40px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 130%;
+  color: #535755;
+}
+.second {
+  margin-top: 20px;
+}
+.text-link {
+  text-decoration: none;
+}
+.article-image {
+  position: relative;
+}
+.article-img {
+  margin-top: 80px;
+  max-width: 100%;
+}
+.article-image::before {
+  content: " ";
+  position: absolute;
+  top: 180px;
+  left: -300px;
+  background: url("../images/decor3.png");
+  width: 528px;
+  height: 48px;
+  z-index: -1;
+}
+.article_gym-classes {
+  max-width: 744px;
+}
+.gym_classes {
+  padding: 0;
+  margin: 20px 18px;
+}
+.gym-class {
+  position: relative;
+  margin-bottom: 16px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 130%;
+  color: #535755;
+  list-style: none;
+}
+.gym-class::before{
+position: absolute;
+content: "";
+top: 7px;
+left: -16px;
+background-color: #3596ed;
+width: 8px;
+height: 8px;
+border-radius: 50%;
+}
+.gym-class:last-child {
+  margin: 0;
+}
+
+.article_gym-video {
+  position: relative;
+  margin-top: 40px;
+}
+.btn_play {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  width: 60px;
+  height: 60px;
+  border-radius: 40%;
+  border: none;
+  background-color: #3596ed;
+  transform: translate(-50%, -50%);
+  transition: all 0.3s;
+}
+.btn_play:hover {
+  border-radius: 50%;
+  background-color: #2d82cd;
+}
+.article_gym-video::after {
+  content: " ";
+  position: absolute;
+  top: 500px;
+  left: 930px;
+  background: url("../images/decor3.png");
+  width: 528px;
+  height: 48px;
+  z-index: -1;
+}
+.gym_video {
+  max-width: 100%;
+}
+footer {
+  margin-top: 120px;
+}
