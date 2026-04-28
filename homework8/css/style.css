@@ -137,6 +137,8 @@ body {
    
 }
 .button {
+  background: #fff;
+  border: none;
   height: 50px;
   max-width: 250px;
   width: 100%;
