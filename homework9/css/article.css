@@ -19,7 +19,9 @@ p {
   margin: 0;
 }
 /*////////////////////////////////////header */
-
+.article{
+  margin-bottom: 120px;
+}
 .article-title {
   font-family: "Oswald";
   margin-top: 80px;
