@@ -32,3 +32,27 @@ a {
 .section{
   margin-bottom: 140px;
 }
+.title {
+  font-family: "Oswald";
+  margin-top: 80px;
+  font-weight: 600;
+  line-height: 115%;
+  text-transform: uppercase;
+  color: #2c332f;
+  font-size: 36px;
+}
+.big-title {
+  max-width: 596px;
+  font-size: 48px;
+}
+.mid-title {
+  margin: 0;
+  font-size: 48px;
+}
+.text {
+  margin-top: 40px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 130%;
+  color: #535755;
+}
