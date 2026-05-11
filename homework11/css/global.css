@@ -1,0 +1,82 @@
+html {
+  font-family: Ubuntu, Oswald, sans-serif;
+}
+*,
+*::before,
+*::after
+ {
+  box-sizing: border-box;
+}
+.container {
+  max-width: 1250px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    min-width: 375px;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+a {
+    text-decoration: none;
+}
+.section{
+  margin-bottom: 140px;
+}
+.title {
+  font-family: "Oswald";
+  margin-top: 80px;
+  font-weight: 600;
+  line-height: 115%;
+  text-transform: uppercase;
+  color: #2c332f;
+  font-size: 36px;
+}
+.big-title {
+  max-width: 596px;
+  font-size: 48px;
+}
+.mid-title {
+  margin: 0;
+  font-size: 48px;
+}
+.text {
+  margin-top: 40px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 130%;
+  color: #535755;
+}
+img {
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+@media(width <= 992px){
+  .container{
+    max-width: 768px;
+  }
+}
+@media(width <= 992px){
+  .text{
+    margin-top: 25px;
+  }
+}
+@media(width <= 768px){
+  .container{
+    max-width: 576px;
+  }
+  .section{
+    margin-bottom: 80px;
+  }
+}

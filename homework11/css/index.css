@@ -1,0 +1,245 @@
+.hero {
+  margin-top: 80px;
+  position: relative;
+}
+.hero::after {
+  content: "";
+  position: absolute;
+  background: url(../images/decor-large-icon.svg);
+  width: 100%;
+  z-index: -1;
+  height: 48px;
+  bottom: 106px;
+}
+
+.hero-container {
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+}
+.hero-left-content {
+  max-width: 492px;
+}
+.hero-title {
+  font-size: 62px;
+  margin-top: 0;
+}
+.hero-title strong {
+  color: #3596ed;
+  font-weight: 600;
+}
+.hero-text {
+  max-width: 439px;
+}
+.hero-button {
+  margin-top: 140px;
+  display: inline-block;
+  padding: 19px 32px;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 130%;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  text-align: center;
+  color: #fff;
+  background: #3596ed;
+}
+.hero-right-content {
+  position: relative;
+  display: flex;
+}
+.hero-choose-text {
+  max-width: 161px;
+  padding: 22px;
+  position: absolute;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 130%;
+  text-align: center;
+  color: #2c332f;
+  top: 40px;
+  left: 50%;
+  transform: translateX(-50%);
+  border: 1px solid #535755;
+  background: rgba(255, 255, 255, 0.9);
+}
+.news {
+  display: none;
+}
+.news-container {
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  gap: 28px;
+}
+.news-article {
+  display: flex;
+  flex-direction: column;
+  max-width: 284px;
+  border: 1px solid #d3cbd9;
+  overflow: hidden;
+}
+.news-header img {
+  display: block;
+}
+.news-info {
+  padding: 20px 20px 0 20px;
+}
+.news-info time {
+  font-weight: 300;
+  font-size: 14px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #858e8a;
+}
+.news-info h3 {
+  margin-top: 8px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 130%;
+  color: #2c332f;
+}
+.news-footer {
+  margin-top: auto;
+}
+
+.news-footer-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 0 20px 20px 20px;
+  margin-top: 12px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 130%;
+  color: #3596ed;
+}
+.news-footer-link::after {
+  content: "";
+  display: inline-block;
+  background: url(../images/blue-arrow-icon.svg) no-repeat;
+  width: 22px;
+  transform: translateY(25%);
+  height: 9px;
+  transition: transform 0.3s;
+}
+.news-footer-link:hover::after {
+  transform: translateY(25%) translateX(5px);
+}
+
+.faq {
+  display: none;
+  position: relative;
+}
+.faq::after {
+  content: "";
+  position: absolute;
+  background: url(../images/decor-large-icon.svg);
+  z-index: -1;
+  height: 48px;
+  top: 215px;
+  width: calc(50% - 300px);
+}
+.faq-container {
+  margin-top: 40px;
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+}
+.faq-questions {
+}
+.faq-details {
+  margin-bottom: 20px;
+  border-bottom: 1px solid #d3cbd9;
+  border-top: 1px solid #d3cbd9;
+}
+.faq-summ::after {
+  content: "";
+  display: inline-block;
+  background: url(../images/arrow-down-icon.svg);
+  width: 17px;
+  height: 22px;
+}
+.faq-summ {
+  font-family: "Oswald", sans-serif;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 115%;
+  text-transform: uppercase;
+  color: #2c332f;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  list-style: none;
+  padding: 20px;
+  cursor: pointer;
+}
+.faq-details[open] .faq-summ::after {
+  transform: rotate(180deg);
+}
+
+.faq-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 130%;
+  color: #535755;
+}
+.faq-summ::-webkit-details-marker {
+  display: none;
+}
+details > p {
+  padding: 0 20px 20px;
+}
+
+@media(width <= 1440px){
+  .hero-right-content img{
+    width: 50%;
+  }
+}
+@media(width <= 992px){
+  .hero::after{
+    display: none;
+  }
+  .hero-container{
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+  }
+  .hero-left-content{
+    text-align: center;
+   
+  }
+  .hero-text {
+    max-width: inherit;
+  }
+  .hero-button{
+    margin-top:25px ;
+  }
+  .hero-title{
+    
+    font-size: 52px;
+  }
+}
+
+@media(width <= 768px){
+   .hero-title{
+    font-size: 50px;
+  }
+}
+@media(width <= 576px){
+   .hero-title{
+    font-size: 42px;
+  }
+  .hero-left-content{
+      max-width: 410px;
+  }
+  .hero {
+    margin-top: 40px;
+  }
+  .hero-choose-text{
+    max-width: 125px;
+    padding: 10px;
+    font-size: 14px;
+  }
+}
