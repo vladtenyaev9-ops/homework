@@ -64,12 +64,13 @@
   background: rgba(255, 255, 255, 0.9);
 }
 .news {
-  display: none;
+ 
 }
 .news-container {
   margin-top: 40px;
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
   gap: 28px;
 }
 .news-article {
@@ -128,7 +129,6 @@
 }
 
 .faq {
-  display: none;
   position: relative;
 }
 .faq::after {
@@ -154,10 +154,11 @@
   border-top: 1px solid #d3cbd9;
 }
 .faq-summ::after {
+  margin-right:20px;
   content: "";
   display: inline-block;
-  background: url(../images/arrow-down-icon.svg);
-  width: 17px;
+  background: url(../images/arrow-down-icon.svg) no-repeat;
+  width: 22px;
   height: 22px;
 }
 .faq-summ {
@@ -196,6 +197,13 @@ details > p {
   .hero-right-content img{
     width: 50%;
   }
+   .news-article{
+    max-width: 400px;
+  }
+  .news-header img {
+  display:inline;
+  width: 100%;
+}
 }
 @media(width <= 992px){
   .hero::after{
@@ -220,12 +228,31 @@ details > p {
     
     font-size: 52px;
   }
+   .news-article{
+    max-width: 100%;
+  }
+  .faq-container{
+    flex-direction: column;
+  }
+  .faq-image{
+    width: 100%;
+  }
 }
 
 @media(width <= 768px){
    .hero-title{
     font-size: 50px;
   }
+   .news-container{
+    gap: 18px;
+   }
+   .faq::after{
+    display: none;
+   }
+   .faq-summ {
+    font-size: 20px;
+   }
+   
 }
 @media(width <= 576px){
    .hero-title{
@@ -242,4 +269,10 @@ details > p {
     padding: 10px;
     font-size: 14px;
   }
+ .news-container{
+    gap: 10px;
+   }
+    .faq-summ::after{
+      margin-right: 5px;
+    }
 }

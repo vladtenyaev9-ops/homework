@@ -3,8 +3,7 @@ html {
 }
 *,
 *::before,
-*::after
- {
+*::after {
   box-sizing: border-box;
 }
 .container {
@@ -13,10 +12,10 @@ html {
   padding: 0 15px;
 }
 body {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-    min-width: 375px;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  min-width: 375px;
 }
 h1,
 h2,
@@ -28,9 +27,9 @@ p {
   margin: 0;
 }
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
-.section{
+.section {
   margin-bottom: 140px;
 }
 .title {
@@ -62,21 +61,43 @@ img {
   height: auto;
   object-fit: cover;
 }
-@media(width <= 992px){
-  .container{
+
+@media (width <= 1440px) {
+  .mid-title {
+    text-align: center;
+  }
+}
+
+@media (width <= 992px) {
+  .container {
     max-width: 768px;
   }
-}
-@media(width <= 992px){
-  .text{
+  .text {
     margin-top: 25px;
   }
+  .section {
+    margin-bottom: 100px;
+  }
 }
-@media(width <= 768px){
-  .container{
+
+@media (width <= 768px) {
+  .container {
     max-width: 576px;
   }
-  .section{
+  .section {
     margin-bottom: 80px;
+  }
+  .mid-title {
+    font-size: 42px;
+  }
+ 
+}
+
+@media (width <= 576px) {
+  .mid-title {
+    font-size: 36px;
+  }
+  .section {
+    margin-bottom: 50px;
   }
 }
