@@ -1,26 +1,27 @@
-html {
-  font-family: Ubuntu, Oswald, sans-serif;
-}
-body * {
-  box-sizing: border-box;
-}
-.container {
-  max-width: 1250px;
-  margin: 0 auto;
-  padding: 0 15px;
-}
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p {
-  margin: 0;
-}
+
 /*////////////////////////////////////header */
-.article{
+.article {
   margin-bottom: 120px;
+  position: relative;
+}
+.article::before {
+  content: "";
+  position: absolute;
+  background: url(../images/decor-large-icon.svg);
+  z-index: -1;
+  height: 48px;
+  top: 550px;
+  width: calc(50% - 300px)
+}
+.article::after {
+  content: "";
+  position: absolute;
+  background: url(../images/decor-large-icon.svg);
+  z-index: -1;
+  height: 48px;
+  bottom: 550px;
+  left: 50%;
+  width: 50%
 }
 .article-text {
   margin-top: 20px;
@@ -35,16 +36,7 @@ p {
   margin-top: 80px;
   max-width: 100%;
 }
-.article-image::before {
-  content: " ";
-  position: absolute;
-  top: 180px;
-  left: -300px;
-  background: url("../images/decor2.svg");
-  width: 528px;
-  height: 48px;
-  z-index: -1;
-}
+
 .article_gym-classes {
   max-width: 744px;
 }
@@ -61,15 +53,15 @@ p {
   color: #535755;
   list-style: none;
 }
-.gym-class::before{
-position: absolute;
-content: "";
-top: 7px;
-left: -16px;
-background-color: #3596ed;
-width: 8px;
-height: 8px;
-border-radius: 50%;
+.gym-class::before {
+  position: absolute;
+  content: "";
+  top: 7px;
+  left: -16px;
+  background-color: #3596ed;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
 }
 .gym-class:last-child {
   margin: 0;
@@ -98,17 +90,34 @@ border-radius: 50%;
   border-radius: 50%;
   background-color: #2d82cd;
 }
-.article_gym-video::after {
-  content: " ";
-  position: absolute;
-  top: 500px;
-  left: 930px;
-  background: url("../images/decor2.svg");
-  width: 528px;
-  height: 48px;
-  z-index: -1;
-}
+
 .gym_video {
   max-width: 100%;
 }
 
+@media (width <= 1440px) {
+  .article::before{
+    display: none;
+  }
+   .article::after{
+    display: none;
+  }
+}
+
+@media (width <= 992px) {
+  .article-img{
+    margin-top: 40px;
+  }
+  .title{
+    margin-top: 40px;
+  }
+}
+
+@media (width <= 768px) {
+  .article{
+    margin-bottom: 60px;
+  }
+}
+
+@media (width <= 576px) {
+}

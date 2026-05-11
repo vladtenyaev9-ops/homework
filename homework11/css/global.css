@@ -78,6 +78,13 @@ img {
   .section {
     margin-bottom: 100px;
   }
+  .big-title{
+    font-size: 42px;
+    margin: auto;
+  }
+  .title{
+    text-align: center;
+  }
 }
 
 @media (width <= 768px) {
@@ -90,11 +97,16 @@ img {
   .mid-title {
     font-size: 42px;
   }
- 
+ .text{
+  margin-top: 20px;
+ }
 }
 
 @media (width <= 576px) {
   .mid-title {
+    font-size: 36px;
+  }
+  .big-title{
     font-size: 36px;
   }
   .section {
