@@ -1,9 +1,14 @@
-.header {
-}
+
 .header-inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding-top: 30px;
   padding-bottom: 30px;
   gap: 10px;
@@ -27,6 +32,8 @@
   font-weight: 500;
   font-size: 18px;
   color: #2c332f;
+  -webkit-transition: color .3s ;
+  -o-transition: color .3s ;
   transition: color .3s ;
 }
 .phone-link:hover{

@@ -1,3 +1,5 @@
+
+
 .hero {
   margin-top: 80px;
   position: relative;
@@ -13,8 +15,12 @@
 }
 
 .hero-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   gap: 60px;
 }
 .hero-left-content {
@@ -46,6 +52,8 @@
 }
 .hero-right-content {
   position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 .hero-choose-text {
@@ -59,7 +67,9 @@
   color: #2c332f;
   top: 40px;
   left: 50%;
-  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
   border: 1px solid #535755;
   background: rgba(255, 255, 255, 0.9);
 }
@@ -68,15 +78,27 @@
 }
 .news-container {
   margin-top: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex: 1 1 25%;
-  justify-content: center;
-  flex-wrap: wrap;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 25%;
+          flex: 1 1 25%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   gap: 28px;
 }
 .news-article {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   max-width: 284px;
   border: 1px solid #d3cbd9;
   overflow: hidden;
@@ -106,8 +128,12 @@
 }
 
 .news-footer-link {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
   display: inline-flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   gap: 8px;
   padding: 0 20px 20px 20px;
   margin-top: 12px;
@@ -121,12 +147,20 @@
   display: inline-block;
   background: url(../images/blue-arrow-icon.svg) no-repeat;
   width: 22px;
-  transform: translateY(25%);
+  -webkit-transform: translateY(25%);
+      -ms-transform: translateY(25%);
+          transform: translateY(25%);
   height: 9px;
+  -webkit-transition: -webkit-transform 0.3s;
+  transition: -webkit-transform 0.3s;
+  -o-transition: transform 0.3s;
   transition: transform 0.3s;
+  transition: transform 0.3s, -webkit-transform 0.3s;
 }
 .news-footer-link:hover::after {
-  transform: translateY(25%) translateX(5px);
+  -webkit-transform: translateY(25%) translateX(5px);
+      -ms-transform: translateY(25%) translateX(5px);
+          transform: translateY(25%) translateX(5px);
 }
 
 .faq {
@@ -143,8 +177,15 @@
 }
 .faq-container {
   margin-top: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   gap: 40px;
 }
 .faq-questions {
@@ -160,7 +201,8 @@
   background: url(../images/arrow-down-icon.svg) no-repeat;
   width: 22px;
   height: 22px;
-  flex-shrink: 0;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
   margin-left: auto;
   margin-right: 0;
 }
@@ -172,16 +214,24 @@
   line-height: 115%;
   text-transform: uppercase;
   color: #2c332f;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   gap: 10px;
   list-style: none;
   padding: 20px;
   cursor: pointer;
 }
 .faq-details[open] .faq-summ::after {
-  transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+          transform: rotate(180deg);
 }
 
 .faq-text {
@@ -210,7 +260,8 @@ details > p {
   width: 100%;
 }
 .news-container{
-  flex-basis: 50%;
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
   gap: 20px;
 }
 }
@@ -219,8 +270,13 @@ details > p {
     display: none;
   }
   .hero-container{
-    flex-direction: column;
-    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     gap: 25px;
   }
   .hero-left-content{
@@ -241,7 +297,10 @@ details > p {
     max-width: 100%;
   }
   .faq-container{
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
   .faq-image{
     width: 100%;

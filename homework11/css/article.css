@@ -1,5 +1,4 @@
 
-/*////////////////////////////////////header */
 .article {
   margin-bottom: 120px;
   position: relative;
@@ -11,7 +10,7 @@
   z-index: -1;
   height: 48px;
   top: 550px;
-  width: calc(50% - 300px)
+  width: calc(50% - 300px);
 }
 .article::after {
   content: "";
@@ -21,7 +20,7 @@
   height: 48px;
   bottom: 550px;
   left: 50%;
-  width: 50%
+  width: 50%;
 }
 .article-text {
   margin-top: 20px;
@@ -75,15 +74,25 @@
   position: absolute;
   top: 50%;
   left: 50%;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   width: 60px;
   height: 60px;
   border-radius: 40%;
   border: none;
   background-color: #3596ed;
-  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
   transition: all 0.3s;
 }
 .btn_play:hover {
@@ -96,28 +105,36 @@
 }
 
 @media (width <= 1440px) {
-  .article::before{
+  .article::before {
     display: none;
   }
-   .article::after{
+  .article::after {
     display: none;
   }
 }
 
 @media (width <= 992px) {
-  .article-img{
+  .article-img {
     margin-top: 40px;
   }
-  .title{
+  .title {
     margin-top: 40px;
   }
 }
 
 @media (width <= 768px) {
-  .article{
+  .article {
     margin-bottom: 60px;
   }
 }
 
 @media (width <= 576px) {
+  .btn_play {
+    width: 50px;
+    height: 50px;
+  }
+  .play-btn-img {
+    width: 18px;
+    height: 18px;
+  }
 }
