@@ -96,13 +96,16 @@
               Nike <span class="hero__title-accent">air</span> mag
             </h1>
           </header>
-          <img
-            class="hero__img"
-            src="./images/nike-air-mag-1-img.png"
-            width="846"
-            height="713"
-            alt="Кроссовок Nike air mag c желтым неоновым кольцом под подошвой"
-          />
+          <picture>
+            <source srcset="./images/nike-air-mag-1-img.webp" type="image/webp" />
+            <img
+              class="hero__img"
+              src="./images/nike-air-mag-1-img.png"
+              width="846"
+              height="713"
+              alt="Кроссовок Nike air mag c желтым неоновым кольцом под подошвой"
+            />
+          </picture>
           <footer class="hero__footer">
             <a class="hero__details" href="#"
               >Подробнее
@@ -125,13 +128,17 @@
             киноделией и готовы сопровождать вас в любых приключениях.
           </p>
           <div class="air-mag__content">
-            <img
-              class="air-mag__image"
-              src="./images/nike-air-mag-2-img.png"
-              width="911"
-              height="635"
-              alt="кроссовки nike air-mag стоят в желтом кругу"
-            />
+            <picture>
+              <source srcset="./images/nike-air-mag-2-img.webp" type="image/webp" />
+              <img
+                class="air-mag__image"
+                src="./images/nike-air-mag-2-img.png"
+                width="911"
+                height="635"
+                loading="lazy"
+                alt="кроссовки nike air-mag стоят в желтом кругу"
+              />
+            </picture>
             <ul class="air-mag__content-list text-light">
               <li class="air-mag__content-item">
                 инновационная технология амортизации, которая обеспечивает
@@ -145,7 +152,7 @@
           </div>
         </div>
       </section>
-      <section></section>
+
     </main>
   </body>
 </html>

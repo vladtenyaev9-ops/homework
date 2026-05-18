@@ -1,11 +1,11 @@
 @media (width > 768px) {
   .air-mag {
-   margin-bottom: 95px;
+    margin-bottom: 95px;
   }
 }
 @media (width <= 768px) {
   .air-mag {
-   margin-bottom: 80px;
+    margin-bottom: 80px;
   }
 }
 .air-mag__text {
@@ -21,9 +21,9 @@
 }
 @media (width <= 768px) {
   .air-mag__text {
-    margin-top: 5px;
+    margin-top: 8px;
     flex-direction: column;
-    gap: 5px;
+    gap: 8px;
   }
 }
 .air-mag__text::before {
@@ -37,6 +37,9 @@
 }
 .air-mag__content {
   display: flex;
+}
+.air-mag__image {
+  width: 100%;
 }
 @media (width > 768px) {
   .air-mag__content {
@@ -72,10 +75,15 @@
   flex-shrink: 0;
   gap: 5px;
 }
+@media (width > 768px) {
+  .air-mag__content-item {
+    width: 293px;
+  }
+}
 .air-mag__content-item::before {
   content: "";
   display: block;
   background: url(../../icons/yellow-check-box-icon.svg);
-  width: 32px;
-  height: 32px;
+  width: 46px;
+  height: 34px;
 }

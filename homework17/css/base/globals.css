@@ -2,6 +2,9 @@
   font-family: var(--font-family);
   font-weight: 400;
   color: var(--main-color);
+  scroll-behavior: smooth;
+  scroll-padding-top: 110px;
+
 }
 
 .page__body {
@@ -20,13 +23,17 @@ button:focus-visible {
   outline: 1px solid var(--accent-color);
   outline-offset: 2px;
 }
+img{
+  object-fit: cover;
+}
 .title {
   font-weight: 600;
   text-transform: uppercase;
   color: var(--main-color);
 }
 .title-md {
-  font-size: 60px;
+  /* min-width 375px max-width 992px  */
+  font-size:clamp(32px, 0.936rem + 4.54vw, 60px);
 }
 .title-sm {
   font-size: 32px;

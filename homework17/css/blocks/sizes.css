@@ -1,0 +1,18 @@
+.sizes__slider-img {
+}
+.sizes__container {
+  max-width: 1308px;
+  margin: 0 auto;
+}
+.title__sizes-md {
+  margin-bottom: 6px;
+}
+.title__sizes-sm {
+    margin-top: 26px;
+}
+.text__sizes-light {
+    margin-top: 20px;
+}
+.sizes__title-accent{
+    color: var(--accent-color);
+}
