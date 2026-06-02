@@ -67,7 +67,7 @@
   content: "";
   display: flex;
   flex-shrink: 0;
-  background: url(../icons/faq-plus.svg);
+  background: url(../../icons/faq-plus.svg);
 }
 @media (width > 768px) {
   .faq__summary::before {
@@ -87,7 +87,7 @@
   position: absolute;
   display: inline-block;
   content: "";
-  background: url(../icons/faq-cross.svg);
+  background: url(..//..//icons/faq-cross.svg);
 }
 @media (width > 768px) {
   .faq__details[open] > .faq__summary::before {

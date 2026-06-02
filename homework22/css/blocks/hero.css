@@ -6,11 +6,6 @@
   display: flex;
 }
 
-/* //////////////////////////////////// */
-
-.hero__info-dec {
-}
-
 @media (width > 577px) {
   .hero__wrapper {
     display: flex;
@@ -92,8 +87,6 @@
   }
 }
 
-/* /////////////////////////////////////////////// */
-
 .hero__title {
   /* 390 - 1920 */
   margin-top: clamp(3.125rem, -0.061rem + 13.07vw, 15.625rem);
@@ -143,7 +136,17 @@
   background-color: var(--accent-color);
   font-weight: 400;
   color: #fff;
+  transition:
+    background-color var(--transition-time),
+    transform var(--transition-time);
 }
+@media (any-hover: hover) {
+  .hero__button:hover {
+    background-color: var(--accent-glow-color);
+    transform: scale(1.05);
+  }
+}
+
 @media (width > 768px) {
   .hero__button {
     width: 235px;

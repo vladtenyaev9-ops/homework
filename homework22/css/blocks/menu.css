@@ -12,6 +12,12 @@
   font-weight: 400;
   /* 1024 - 1920 */
   font-size: clamp(18px, 0.982rem + 0.22vw, 20px);
+  transition: color var(--transition-time);
+}
+@media(any-hover: hover){
+  .menu__link:hover{
+    color: var(--accent-glow-color);
+  }
 }
 
 @media (max-width: 1200px) {

@@ -73,6 +73,15 @@
 .review__button {
   border: 1px solid #111;
   border-radius: 3px;
+  transition:
+    color var(--transition-time),
+    background-color var(--transition-time);
+}
+@media (any-hover: hover) {
+  .review__button:hover {
+    color: #fff;
+    background-color: var(--accent-glow-color);
+  }
 }
 @media (width > 768px) {
   .review__button {

@@ -123,7 +123,12 @@
   background-color: var(--main-color);
   color: #fff;
 }
-
+.connection__contact-button {
+  transition: background-color var(--transition-time);
+}
+.connection__news-button {
+  transition: background-color var(--transition-time);
+}
 @media (width > 1024px) {
   .connection__contact-button {
     padding: 15.5px 42.5px;
@@ -160,6 +165,14 @@
     padding: 8px 25px;
     margin-top: 36px;
     font-size: 15px;
+  }
+}
+@media (any-hover: hover) {
+  .connection__contact-button:hover {
+    background-color: var(--accent-color);
+  }
+  .connection__news-button:hover {
+    background-color: var(--accent-color);
   }
 }
 .connection__news {
@@ -242,14 +255,12 @@
 }
 @media (width > 768px) {
   .connection__checkbox:checked::after {
-    background: url("/icons/checkmark.svg") no-repeat center/ 17px 11px;
-
+    background: url("../../icons/checkmark.svg") no-repeat center/ 17px 11px;
   }
 }
 @media (width <= 768px) {
   .connection__checkbox:checked::after {
-    background: url("/icons/checkmark.svg") no-repeat center/ 11px 7px;
-
+    background: url("../../icons/checkmark.svg") no-repeat center/ 11px 7px;
   }
 }
 .connection__checkbox-text {
@@ -265,7 +276,7 @@
   .connection__checkbox-text {
     margin-left: 29px;
     font-size: 10px;
-      max-width: 300px;
+    max-width: 300px;
   }
 }
 @media (width <= 390px) {
