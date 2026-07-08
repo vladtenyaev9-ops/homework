@@ -45,19 +45,7 @@ const newReview = () => {
             <div class="review__comment">
               <h3 class="review__comment-title">${title}</h3>
               <p class="review__comment-text">${text}</p>
-              <div class="review__comment-images-box">
-              
-              </div>
-              <button class="review__comment-button" type="button">
-                Смотреть все фото
-              </button>
-              <button
-                class="review__comment-button review__comment-button--hide"
-                type="button"
-                hidden
-              >
-                Скрыть все фото
-              </button>
+              <div class="review__comment-images-box"></div>
             </div>
             <time class="review__article-date" datetime="2022-05-21"
               >21/05/2022</time
