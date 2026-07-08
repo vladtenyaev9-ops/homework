@@ -1,9 +1,9 @@
 import { extraNews } from "./news-content.js";
 
 const newsSection = document.querySelector('.news__section');
-const newsList = newsSection?.querySelector('.news__list');
-const showMoreNewsButton = newsSection?.querySelector('.news__show-more');
-const hideNewsButton = newsSection?.querySelector('.news__hide-comments');
+const newsList = newsSection.querySelector('.news__list');
+const showMoreNewsButton = newsSection.querySelector('.news__show-more');
+const hideNewsButton = newsSection.querySelector('.news__hide-comments');
 
 const formatDate = (date) => date.split('-').reverse().join('/');
 
